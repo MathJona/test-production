@@ -1,0 +1,42 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended",  
+      "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "rules": {
+      "no-console": "error", 
+      "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }], 
+      "no-empty-function": "warn", 
+      "no-implicit-globals": "warn",
+
+      "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+      "@typescript-eslint/no-unused-vars-experimental": "error", 
+      "@typescript-eslint/no-explicit-any": "warn", 
+      "@typescript-eslint/explicit-function-return-type": ["warn", { "allowExpressions": true }],
+      "@typescript-eslint/consistent-type-definitions": ["error", "interface"], 
+      "@typescript-eslint/no-empty-function": "warn",
+      "@typescript-eslint/no-inferrable-types": "warn",
+  
+      "indent": ["error", 2], 
+      "quotes": ["error", "single"], 
+      "semi": ["error", "always"],
+      "eqeqeq": ["error", "always"],
+      "arrow-body-style": ["error", "as-needed"], 
+      "curly": ["error", "all"], 
+      "no-trailing-spaces": "error",
+      "object-curly-spacing": ["error", "always"]
+    }
+  }
